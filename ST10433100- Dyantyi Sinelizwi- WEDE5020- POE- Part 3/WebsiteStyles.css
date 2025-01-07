@@ -1,0 +1,205 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* Using a simple radial gradient */
+.element {
+    background: radial-gradient(circle, #fcc0c0, #894949, #cd9d77);
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+
+  @media (min-width: 1024px) {
+    /* Styles for desktop screens */
+  }
+
+  @media (min-width: 768px) {
+
+  }
+
+  @media (max-width: 768px) {
+    
+  }
+  
+
+.container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+}
+
+image {
+    max-width: 25%;
+    max-height: 15%;
+    float: left;
+}
+
+.text {
+        font-size: 30px;
+        padding-left: 20px;
+        padding-top: 20px;
+        float: right;
+        font-color: purple;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+nav {
+        font-family: brush script mt, cursive;
+}
+
+marquee {
+    font-family: brush script mt;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #894949;
+    background-size: cover;
+    height: 50px;
+    padding-top: 1.5px;
+    padding-bottom: 3px;
+}
+
+.navigation {
+  background-color: #894949;
+  background-size: cover;
+  height: 50px;
+  padding-top: 1px;
+  padding-bottom: 3px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top:20%;
+    width:max-content;
+    height: max-content;
+    overflow: auto; 
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.popup-content {
+    background-color: yellow;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    height: 80%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.popup-message{
+    font-size: 20px;
+    margin: 20px 0;
+
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+.form-container input[type="submit"] {
+  width: auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form-container {
+  margin: 0 auto;
+  align-items: center;
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fcc0c0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Styles for screens less than 960px wide */
+@media (max-width: 959px) {
+    /* Add your styles here */
+    body {
+      font-size: 14px;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    /* Additional styles for smaller screens */
+  }
+
+  /* Styles for screens less than 960px wide */
+@media (max-width: 959px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    
+    /* Styles for mobile phones in portrait orientation */
+    @media (max-width: 480px) {
+      body {
+        font-size: 12px;
+      }
+      .container {
+        width: 100%;
+        padding: 10px;
+      }
+      /* Additional styles specific to mobile phones */
+    }
+  }
+  
+  .newsletter {
+    width:100%;
+    padding: 20px;
+  }
+
+  .newsletter iframe {
+    width:100%;
+    height: 100px;
+    border-style: double;
+  }

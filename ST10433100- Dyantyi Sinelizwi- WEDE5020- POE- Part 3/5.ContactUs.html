@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>
+    <title>
+            CONTACT US
+    </title>
+
+    <link rel="stylesheet" href="WebsiteStyles.css">
+    <script src="WebsiteFunctionality.js" defer></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<div class="element">
+
+<body >
+
+        <img src="Makuphilwe_Logo-.png" width="100" height="100" align="left"> 
+        <div class="navigation">
+        <nav style="text-align: center;">
+                <ul>
+                        <a href="1.Home page.html"> Home |</a>
+                        <a href="2.AboutUs.html"> About Us |</a>
+                        <a href="3.Services.html"> Services |</a>
+                        <a href="4.Products.html"> Products |</a>
+                        <a href="5.ContactUs.html"> Contact Us! </a>
+                </ul>
+        
+                </nav>
+                </div>
+
+
+                <div class="popup" id="salePopup">
+                        <div class="popup-content">
+                                <span class="close-btn" onclick="closePopup()">&times;</span>
+
+                                <h2> Winter Sale! </h2>
+                                <p class="popup-message"> Don't miss out on our Winter Sale on all our print Bomber Jackets!<br>
+                                         20% off your first order, and 10% off all returning customers! </p>
+
+                                         <h3 id="countdown"> Sale Ends In: </h3>
+
+                                         <script>
+                                                document.addEventListener("DOMContentLoaded", function() {
+                                                        const countdownElement = document.getElementById("countdown");
+                                                        const today = new Date();
+                                                        const endDate = new Date(today.getTime() + 45 * 24 * 60 * 60 * 1000);
+
+                                                        const countdownInterval = setInterval(function() {
+                                                                const now =new Date();
+                                                                const timeDifference = endDate - now;
+
+                                                                if (timeDifference > 0) {
+                                                                        const days = Math.floor (timeDifference / (1000 * 60 * 60 *24));
+                                                                        const hours = Math.floor ((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60 * 24));
+                                                                        const minutes = Math.floor ((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                                                                        const seconds = Math.floor ((timeDifference % (1000 * 60)) / 1000);
+
+                                                                        countdownElement.textContent = `Sale Ends In: ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+
+                                                                } else {
+                                                                        clearInterval(countdownInterval);
+                                                                        countdownElement.textContent = "The Sale Has Ended";
+                                                                }
+
+                                                        }, 1000);
+
+                                                });
+                                         </script>
+                        </div>
+                </div>
+
+
+
+
+                <h1 style="text-align: center;"><i> Fill this out and we will contact you:</i></h1>
+
+                <div class="form-container">
+                <div class="form">
+                <form id="contactForm" action="mailto:lizwidyantyi@gmail.com" method="post" enctype="text/plain">
+
+                        <label for="Name"> Enter your Name: </label>
+                        <input type="text" id="Name" name="Name"><br>
+                        
+                        <label for="Surname"> Enter your Surname: </label>
+                        <input type="text" id="Surname" name="Surname"><br>
+
+                        <label for="Cellphone"> Enter your Cellphone Number </label>
+                        <input type="text" id="Cellphone" id="Cellphone" name="Cellphone"><br>
+
+                        <b><i> Select the type of service you would prefer: </i></b><br>
+
+                        <input type="radio" id="mconsultation" name="service" value="Consultation">
+                        <label for="mconsultation"> Main Consultation </label><br>
+
+                        <input type="radio" id="econsultation" name="service" value="Consultation">
+                        <label for="econsultation"> Extended Consultation </label><br>
+
+                        <input type="radio" id="oscleansing" name="service" value="Consultation">
+                        <label for="oscleansing"> On-Site Cleansing </label><br>
+
+                        <input type="radio" id="homecleansing" name="service" value="Consultation">
+                        <label for="homecleansing"> Home Cleansing </label><br>
+
+                        <input type="radio" id="housecleansing" name="service" value="Consultation">
+                        <label for="housecleansing"> House Cleansing </label><br>
+
+                        <input type="radio" id="rivercleansing" name="service" value="Consultation">
+                        <label for="rivercleansing"> River Cleansing </label><br>
+
+                        <input type="radio" id="waterfallcleansing" name="service" value="Consultation">
+                        <label for="waterfallcleansing"> Waterfall Cleansing </label><br>
+
+                        <input type="radio" id="oceancleansing" name="service" value="Consultation">
+                        <label for="oceancleansing"> Oceanic Cleansing </label><br>
+
+                        <input type="radio" id="products" name="service" value="Consultation">
+                        <label for="products"> I would like to purchase a product </label><br>
+
+                        <input type="submit" value="Contact Me!" onclick="alert('Submission recieved! Please allow 2 business days for a response. Happy Healing!');
+                        return false;">
+                        <input type="reset" value="Clear">
+                        
+
+                </form>
+
+                <div id="popup" style="display: none;">
+                        <p class="popup-message">Name is required!</p>
+                        <button onclick="closePopup()">Close</button>
+                    </div>
+
+                </div>
+                </div>
+
+                
+                <h1 style="text-align: center;"><i> And this is how to contact us!</i></h1>
+                <p style="text-align: center;">
+                        <img src="Call Icon.jpg" width="50" height="50"> Call us on: <font color="white"> 067 859 6324 </font><br>
+                        <img src="Whatsapp Icon.png" width="50" height="50"> WhatsApp us on: <font color="white"> 067 859 6324 </font><br>
+                        <img src="Email Icon.jpg" width="50" height="50"> Shoot us an email on: <font color="white"> makuphilwe@gmail.com </font><br>
+                        <img src="Location Icon.jpg" width="50" height="50"> Or visit us physically at: <font color="white"> 7570B Immink Street,<br> Zone 3 Diepkloof,<br> Soweto, Johannesburg</font>
+
+                </p>
+                <h2 align="center"><i><b> We look forward to hearing from you soon! </b></i></h2>
+
+                <div class="center">
+                <img src="cartoon-dog.gif" width="100" height="100" align="center">
+                </div>
+
+
+
+        <footer>
+
+                <div id="newsletter">
+                        <iframe src="https://forms.gle/xL4vYQ4duNZ2a47Q9" width="100%" height="500" frameborder="0"
+                        marginheight="0" marginwidth="0"> Loading... </iframe>
+                </div>
+
+
+                <p style="text-align: center;">
+                        &copy; 2024 Makuphilwe. All rights reserved.
+                </p>
+        </footer>
+        </div>
+
+</body>
+</html>
